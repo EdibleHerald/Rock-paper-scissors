@@ -15,32 +15,29 @@ let playerSelection;
 function playRound(playerSelection,computerSelection){
 computerSelection=getComputerChoice();
 playerSelection = prompt('Rock, paper, or scissors?','').toLowerCase();
-    if (playerSelection=='rock' && computerSelection=='scissors'){
+    if 
+    (
+    playerSelection=='rock' && computerSelection=='scissors'||
+    playerSelection=='paper' && computerSelection=='rock'||
+    playerSelection=='scissors' && computerSelection=='paper'
+    ){
         alert('You win!')
     }
-    else if (playerSelection=='rock' && computerSelection=='paper'){
+    else if 
+    (
+    playerSelection=='rock' && computerSelection=='paper'||
+    playerSelection=='paper' && computerSelection=='scissors'||
+    playerSelection=='scissors' && computerSelection=='rock'
+    ){
         alert('You Lose!')
     }
-    else if (playerSelection=='rock' && computerSelection=='rock'){
+    else if 
+    (
+    playerSelection=='rock' && computerSelection=='rock'||
+    playerSelection=='paper' && computerSelection=='paper'||
+    playerSelection=='scissors' && computerSelection=='scissors'
+    ){
         alert('Tie!')
     }
-    else if (playerSelection=='paper' && computerSelection=='scissors'){
-        alert('You Lose!')
-    }
-    else if (playerSelection=='paper' && computerSelection=='rock'){
-        alert('You Win!')
-    }
-    else if (playerSelection=='paper' && computerSelection=='paper'){
-        alert('Tie!')
-    }
-    else if (playerSelection=='scissors' && computerSelection=='paper'){
-        alert('You win!')
-    }
-    else if (playerSelection=='scissors' && computerSelection=='rock'){
-        alert('You lose!')
-    }
-    else if (playerSelection=='scissors' && computerSelection=='scissors'){
-        alert('Tie!')
-    }
-    
 }
+
